@@ -77,3 +77,221 @@
 // var str = "Wecode Academy";
 // let  result = str.split(' ').join(' Hello World ')
 // console.log(result)
+
+
+//Array
+//Size automatically increase hoti hai
+//Ek ya ek se jyada values store krva skte hain
+// let str = "";
+// let arr = ["Shoyab 101", "Wecode", 4, "Jaipur", "rashid", 10.5, 34545];
+// console.log(arr);
+// console.log(arr.length);
+// console.log(arr[7]);
+
+//  let arr = ['bilal',63546474,'usman khan','merta city',341510];
+//  console.log("my name is",arr[0],"and my mobile number",arr[1],"my father name ",arr[2],'addres',arr[3],"pencode",arr[4]);
+
+// let arr = [10,30,40,50];
+// for(let i = arr.length-1; i>= 0; i--){
+//   console.log(arr[i]);
+// }
+
+// 1. Find max number from array 
+// 2. find min number from array 
+// 3. Find total duplicate count of a number 
+// 4. find middle element of the array 
+// 5. find last element of the array 
+// 6. find first element of the array 
+// 7. find if a number is present more than 3 times in the array or not ?
+// 8. Find total count of odd numbers in array 
+// 9. Find total count of even numbers in array 
+// 10. Find average of the array
+
+// 1. Find max number from array
+// let arr = [1, 20, 3, 44, 5, 69, 7, 80, 9, 10];
+// let max = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+
+// 2. find min number from array 
+//  let arr = [8, 20, 3, 44, 5, 69, 7, 80, 9, 10];
+//  let min = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//   if (min > arr[i]) {
+//     min = arr[i];
+//   } 
+// }
+// console.log(min);
+             
+//  let arr = [8, 20, 3, 44, 5, 69, 7, 80, 9, 10];
+
+//  for (let a = arr.length-1; a >= 0 ; a--) {
+//   console.log(arr[a]);
+  
+//  }
+
+// Find total duplicate count of a number
+// let arr =[22,89,20,47,65,83,20,45,39];
+// let dup = {};
+// for (let a = 0; a < arr.length; a++) {
+//   if (arr[a] == dup[a]) {
+//     dup = arr[a];
+//   }
+// }
+// console.log(dup);
+
+  // Find total duplicate count of a number
+// let  arr =[1,2,3,4,5,6,2,7,8,9,2,];
+// let count = 0;
+// for (let a = 0; a < arr.length; a++) {
+//     for(let i=a+1; i <arr.length; i++){
+//       if (arr[a] === arr[i]) {
+//         count ++;
+//         // console.log(arr[a])
+//       }
+//     }
+// } 
+// console.log(count);
+
+// find last element of the array 
+// let arr = [12,14,15,16,64,543,675];
+// let len = arr.length-1;
+// console.log(arr[len]);
+
+  // const arr = [2, 3, 4, 2, 5, 2, 7, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3];
+  //       const num = arr[0];
+  //       let count = 0;
+  //       for (let i = 0; i < arr.length; i++) {
+  //           if (arr[i] === num) {
+  //               count++;
+  //           }
+  //       }
+  //       console.log(`${arr[0]} number are`, count)
+
+
+
+//   const arr = [1, 99, 2, 1212, 3, 99, 15, 98, 6, 7,14, 7];
+//  let arrs =[arr.length-1];
+//   console.log(arr[arrs/2 +0.5]);
+   // let arr = [1, 2, 3, 4, 5, 23, 23, 24, 234, 2, 34, 234, 234, 34534534];
+        // let fristElement = arr[0];
+        // console.log(fristElement)
+
+
+        // const arr = [4, 5, 1, 2, 10, 121, 5, 4, 5, 8, 2, , 2342, 2342, 32342, 34234, 22];
+        // const middleIndex = (arr.length - 1) / 2;
+        // console.log(middleIndex, "-------");
+        // const middleElement = arr[middleIndex];
+        // console.log(middleElement);
+
+        // let arr =[1,2,3,4,5,6,3,7,8,9,2];
+        // let cout =0;
+        // for(let i =0; i <=arr.length-1; i++){
+        //   for(let j=i+1; j<arr.length;j++){
+        //      if (arr[j] ==arr[i]) {
+        //       cout++
+        //   console.log(arr[j]);
+        //       }
+        //     } 
+        //   }
+
+           
+//  let arr =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+//   for(let i = 0;i<arr.length; i++){
+//      if (arr[i] % 2 == 1) {
+//        console.log(arr[i]);
+//      }
+//   }
+
+  // let arr =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+  // for(let i = 0;i<arr.length; i++){
+  //    if (arr[i] % 2 == 0) {
+  //      console.log(arr[i]);
+  //    }
+  // }
+
+  //  let arr =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+  //  let sum =0;
+  // for(let i = 0;i<arr.length; i++){
+  //    if (arr[i] % 2 == 1) {
+  //      sum +=arr[i];
+  //    }
+  // }
+  // console.log(sum);
+
+//    let arr =[1,2,3,4,5,6,7,8,9,60,65,11,12,13,14,15,16];
+//  let sum =0;
+//   for(let i = 0;i<arr.length; i++){
+//      if (arr[i] >50 ) {
+//        sum +=arr[i];
+//      }
+//   }
+//   console.log(sum);
+
+//   let arr =[1,2,3,4,5,6,7,8,9,60,5,500,11,12,13,14,15,16];
+//  let sum =0;
+//   for(let i = 0;i<arr.length; i++){
+//      if (arr[i] < 100 ) {
+//        sum +=arr[i];
+//      }
+//   }
+//   console.log(sum);
+
+//   let arr =[1,2,3,4,5,6,7,8,9,60,5,500,11,12,13,14,15,16];
+//  let sum =1;
+//   for(let i = 0;i<arr.length; i++){
+//        sum =  sum*=arr[i];
+//   }
+//   console.log(sum);
+
+// let student = 10;
+// let studentAverage = student * 45;
+// let totalStudentAvergae = (student + 1) * 52;
+// let teacherWeigth = totalStudentAvergae - studentAverage;
+// console.log(teacherWeigth); // 122
+
+// 2. Array me 3 new numbers push krne hai 
+//    1 number unshift krna hai 
+//    2 shift krne hai 
+//    2 pop krne hai 
+// Aur fir result check krna hai 
+
+// let arr = []; 
+//   arr.unshift(1,2,3,4,5,6,7,8);
+//   arr.shift();
+//   arr.pop();
+//  console.log(arr);
+
+//  Array ko reverse krke use ** se join krna hai 
+// let arr = [1,2,3,4,5,6,7,8,9,10]; 
+//  arr.reverse();
+//  console.log(arr.join("**"));
+
+// Write a program to reverse the array using for loop
+// let arr = [1,2,3,4,5,6,7,8,9,10]; 
+// for (let index = arr.length; index >=0; index--) {
+//   console.log(arr[index]);
+// }
+
+// swaping
+
+// let a = 20;
+// let b = 10;
+// let c = a;
+//  a = b;
+//  b = c;
+// console.log(a,b);
+
+// 1. Function ko 1 number pass krna hai. jo number pass kia hai us number ki table print krni hai. for example 5
+
+// function multiple(a, b) {
+//   console.log(a * b);
+// }
+
+// multiple(4, 2);
+
+
