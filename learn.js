@@ -295,3 +295,133 @@
 // multiple(4, 2);
 
 
+// let arr = ["My Name id wecode academy"];
+
+// let anns = arr.reduce();
+// console.log(anns);
+// const arr = "My Name id wecode academy";
+// let ans = arr.split(" ");
+// let finaltest = ans.reduce(test,0);
+ 
+// function test(prvValue, curValue) {
+//   if (curValue.length % 2 === 1) {
+//     return prvValue++;
+//   }
+// }
+// console.log(finaltest);
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+//   let ans = arr.filter(test);
+
+// function test(num){
+//   return  num % 2 === 1;
+// }
+// let result = ans.map(test1);
+// function test1(num){
+//   return  num * 2;
+   
+// }
+// console.log(result);
+
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+//  let ans = arr.filter();
+//  function tes(num){
+//    return 
+//  }
+
+// let str = "My naMe is weCoDe acadeMy";
+// let ans = str.split(" ");
+// let finaltest = ans.reduce(test,"");
+// function test(total ,val){
+// let fistvalue = val.slice(0,1).toUpperCase();
+// let secoundvalue = val.slice(1).toLowerCase();
+// total = total + fistvalue +  secoundvalue + " ";
+// return total;
+// }
+//  console.log(finaltest);
+
+// let obj ={
+//   name: "bilal",
+//   mobile: 6574637284,
+//   address: "japur",
+//   brother: ["al","bilal","altaf"],
+//   fun :function(a, b){
+//      console.log(a + b);
+//   },
+  
+// };
+// console.log(obj);
+// key and values print
+// let  obj ={
+// name : "bilal",
+// mobile: 34245345345,
+// address: "japur",
+//  bank: {
+//     bankName: "hdfc",
+//     bankAccount: 5345345345,
+//      ifcCode: 245534,
+//     bankAddress:{
+//       country: "india",
+//       state: "rajsthan",
+//       city: "jaipur",
+//     },
+// },
+// };
+// console.log(obj["name"],obj["bank"]["bankName"],obj["bank"]["bankAddress"]["country"]);
+
+
+// key and values print
+// let  obj ={
+//   name : "bilal",
+//   mobile: 34245345345,
+//   address: "japur",
+//   };
+//   let arr = Object.entries(obj);
+//   for (let i = 0; i <arr.length; i++) {
+//    document.write(arr[i][0]+ " " +arr[i][1]+"<br>");
+//   }
+
+// let obj = {
+//   name: "vakeel",
+//   mobile: 6375164100,
+//   address: "karkwal merta city",
+// };
+// let arr = Object.keys(obj);
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i], obj[arr[i]]);
+// }
+
+// object to object 
+
+// let obj = {
+//   name: "vakeel",
+//   mobile: 6375164100,
+//   address: "karkwal merta city",
+//   bankaccount: {
+//     accountname: "harshit sharma",
+//     accountnumber: 87687585875858,
+//   },
+// };
+// let entries = Object.entries(obj);
+// for (let i = 0; i < entries.length; i++) {
+//   // console.log(entries[i][0],entries[i][1]);
+//   if (typeof entries[i][1] === "object") {
+//     let otherEntires = Object.entries(entries[i][1]);
+//     for (let j = 0; j < otherEntires.length; j++) {
+//       console.log(otherEntires[j][0], otherEntires[j][1]);
+//     }
+//   }
+// }
+
+let arr =[1,2,3,4,5,6,1,3,5];
+let set = new Set(arr);
+set.add(15);
+set.add(16);
+set.delete(5);
+
+// set.forEach(test)
+//   function test(num){
+// console.log(num)
+// }
+for (const value of set) {
+  console.log(value);
+}
