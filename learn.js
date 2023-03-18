@@ -412,16 +412,16 @@
 //   }
 // }
 
-let arr =[1,2,3,4,5,6,1,3,5];
-let set = new Set(arr);
-set.add(15);
-set.add(16);
-set.delete(5);
+// let arr =[1,2,3,4,5,6,1,3,5];
+// let set = new Set(arr);
+// set.add(15);
+// set.add(16);
+// set.delete(5);
 
 // set.forEach(test)
 //   function test(num){
 // console.log(num)
 // }
-for (const value of set) {
-  console.log(value);
-}
+// for (const value of set) {
+//   console.log(value);
+// }
