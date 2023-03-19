@@ -114,7 +114,7 @@ console.log(Chop('w3resource',3));
 console.log(findW('The quick brown fox', 'fox'));
 console.log(findW('aa, bb, cc, dd, aa', 'aa'));
 ```
-####  Convert below array[[1,2], [3,4], [5,6], [7,8], [9,10]] to [3,7,11,15,19]
+#### 9. Convert below array[[1,2], [3,4], [5,6], [7,8], [9,10]] to [3,7,11,15,19]
 ```
 let a = [[1,2], [3,4], [5,6], [7,8], [9,10]];
 let newArr = [];
