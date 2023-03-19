@@ -1,6 +1,6 @@
 ## Exercise
 
-## 1.Question 1Write a JavaScript program to check whether a string "Code" presents at 5th (index 4) position in a given string, if "Code" presents in the string return the string without "Code" otherwise return the original one.
+#### 1.Question 1Write a JavaScript program to check whether a string "Code" presents at 5th (index 4) position in a given string, if "Code" presents in the string return the string without "Code" otherwise return the original one.
 
 ```function stringF(str)
 {
@@ -16,7 +16,7 @@
 }
 console.log(stringF("WeacadCode"));
 ```
-## 2.Write a JavaScript program to capitalize the first letter of each word of a given string.
+#### 2.Write a JavaScript program to capitalize the first letter of each word of a given string.
 
 
 ```function capiStr(str) 
@@ -31,7 +31,7 @@ console.log(stringF("WeacadCode"));
 console.log(capiStr("the quick brown fox"));
 ```
 
-## 3.Write a JavaScript program to check whether all the digits in a given number are the same or not.
+#### 3.Write a JavaScript program to check whether all the digits in a given number are the same or not.
 
 
 ```function same(num) {
@@ -45,7 +45,7 @@ console.log(capiStr("the quick brown fox"));
 console.log(same(1234));
 console.log(same(222));
 ```
-## .4 Write a JavaScript function that reverse a number.
+#### .4 Write a JavaScript function that reverse a number.
 
 
 ```let number = 123456789;
@@ -57,7 +57,7 @@ function reverse(num)
 console.log(Number(reverse(number)));
 ```
 
-## 5 Write a JavaScript function to extract unique characters from a string.
+#### 5 Write a JavaScript function to extract unique characters from a string.
 
 
 ```let string = "thequickbrownfoxjumpsoverthelazydog"
@@ -73,7 +73,7 @@ function UniqueStr(str){
 
 console.log(UniqueStr(string));
 ```
-### . 6 Write a JavaScript function to chop a string into chunks of a given length. Test Data :
+##### . 6 Write a JavaScript function to chop a string into chunks of a given length. Test Data :
 
 ```function Chop(str){
      let chunk = [];
@@ -86,7 +86,7 @@ console.log(Chop('w3resource'));
 console.log(Chop('w3resource',2));
 console.log(Chop('w3resource',3));
 ```
-### 7.Write a JavaScript function to find a word within a string. Test Data :
+#### 7.Write a JavaScript function to find a word within a string. Test Data :
 
 ```function findW(text, word){
     
@@ -114,7 +114,7 @@ console.log(Chop('w3resource',3));
 console.log(findW('The quick brown fox', 'fox'));
 console.log(findW('aa, bb, cc, dd, aa', 'aa'));
 ```
-###  Convert below array[[1,2], [3,4], [5,6], [7,8], [9,10]] to [3,7,11,15,19]
+####  Convert below array[[1,2], [3,4], [5,6], [7,8], [9,10]] to [3,7,11,15,19]
 ```
 let a = [[1,2], [3,4], [5,6], [7,8], [9,10]];
 let newArr = [];
