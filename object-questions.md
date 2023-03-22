@@ -118,7 +118,15 @@ function sorting(val1, val2) {
 ```
 
 #### 9 . Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).On separate lines (one console.log statement for each), log the recipe information so it looks like:   Mole Serves: 2 Ingredients: cinnamon cumin cocoa
+```
+
+```
+
 
 #### 10 . Create a JavaScript function inside an object which finds max of 3 numbers. Now call this function of the object and print the maximum number.
 
+```
+
+
+```
 
