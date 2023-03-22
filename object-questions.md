@@ -1,17 +1,19 @@
 ## object
 
 #### 1. What is an object in JavaScript?
-
-``` object ek datastructure hain. jiska use data store krane ke liye kiya jata hain.
-           data store key or value ki form me huti he
+``` 
+object ek datastructure hain. jiska use data store krane ke liye kiya jata hain.
+data store key or value ki form me huti he
 ```
 #### 2.What is the difference between dot notation and bracket notation for accessing object properties?
 
-```dot notation:- esme hum value . likhe ke nikalte for example : obj.keyname
+```
+dot notation:- esme hum value . likhe ke nikalte for example : obj.keyname
 bracket notation:-esme hum valu [] se nikalte he for example : obj.['key'name]
 ```
  #### 3 How do you loop through the properties of an object in JavaScript ?
-```let obj = {
+```
+let obj = {
     f_name: "bilal",
     l_name: "khan",
     mobile: 234234254,
@@ -29,10 +31,11 @@ for (const key in obj) {
 ```
 
 #### 4.What is the difference between an object and an array in JavaScript?
-```array:-
+```
+array:-
        array ek datastructure jiska use data store kervane ke kiye kiya jata hain.emse value ko index se nikalte he.
 object:-
-       object bhi  ek datastructure jiska use data store kervane ke kiye kiya jata hain.emse hum value key pairs se nikalte he
+object bhi  ek datastructure jiska use data store kervane ke kiye kiya jata hain.emse hum value key pairs se nikalte he
 ```
 
 ####  5 Write a JavaScript function to convert an object into a list of [key, value] pairs.
