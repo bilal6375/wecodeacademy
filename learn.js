@@ -1,70 +1,36 @@
 
-// function test() {
-//   return [30,40,50,60];
-// }
-// console.log(test()[0]);
+// let depositBalance = 0;
+// let totalRecord = [];
+// // let withdrawalRecord = [];
 
-//  let arr = [34,45,66];
-//    [a =101 , b = 223, c=44] = arr;
-//    console.log(a,b,c);
-
-// let obj = {
-//   name: "Wecode",
-//   age: 21,
-//   address: {
-//     pincode: 302012,
-//     city: "Jaipur",
-//     state: "Rajasthan",
-//     customerDetails: {
-//       customerName: "Abhinav",
-//       mobile: 934545345,
-//     },
-//   },
-// };
-// let {
-//   age: myAge = 100,
-//   name,
-//   address: {
-//     pincode,
-//     customerDetails: { mobile },
-//   },
-// } = obj;
-// console.log(myAge, name, pincode, mobile);
-   
-
-
-// let boj ={
-//   name:"bilal",
+// function balance(){
+//   document.getElementById('amount').innerHTML =`Rs:${depositBalance}`;
 // }
-// let boj2 ={
-//   age:23,
+
+// function deposit(){
+//    let depositAmount =  Number(prompt('please enter deposit amount'));
+//    depositBalance = depositBalance + depositAmount;
+//    totalRecord.push(depositAmount);
+//    // console.log(totalRecord);
+//    balance();
 // }
-// let boj3 ={
-//   address:"jaipur",
+
+// function withdrawal() {
+//    let withdrawalAmount = Number(prompt('please enter withrawal amount'));
+//    if (depositBalance >= withdrawalAmount) {
+//       depositBalance = depositBalance - withdrawalAmount;
+//       totalRecord.push(-withdrawalAmount);
+//       console.log(totalRecord);
+//       balance();
+//    }
+//    else{
+//       confirm("not a valid blance");
+//    }
 // }
-// let obj4 ={...boj,...boj2,...boj3};
-// console.log(obj4);
-// let ages = 24;
-// function age(num) {
-//   if (num) {
-//     console.log("my age is ",num);
+// function statement() {
+//   str ="";
+//   for (let value of totalRecord) {
+//     str = str + `${value < 0 ? "withdrawal" : "deposit"} : ${value < 0 ? (value * -1) : value } \n`;
 //   }
-//   else{
-//     console.log("no");
-//   }
+//   document.getElementById('result').innerText = str;
 // }
-
-
-// age(ages);
-// function num1(num1) {
-//   return num1;
-// }
-// function num2(num2) {
-//   return num2;
-
-// }
-// function multi(num1,num2) {
-//   num1 && num2 ? console.log(num1());
-// }
-// num1(20);
-// num2(23);
