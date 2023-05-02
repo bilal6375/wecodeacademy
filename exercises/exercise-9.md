@@ -1,130 +1,267 @@
-## Exercise
+## Exercise-09
 
-#### Question 1 Take two numbers and take a value which should be the sum of the two numbers plus some other number. Now findout the 3rd number.
-
-```
-let a = 50;
-let b = 20;
-let sum = 100;
-console.log(sum -(a + b));
-
-```
-#### Question 2 Ask the below questions: What is your English marks in 10th? What is your Science marks in 10th? What is your Math marks in 10th? What is your Hindi marks in 10th? What is your SST marks in 10th? Now calculate percentage by taking all the 5 subjects numbers. 
-
-```
-let English = Number(prompt("What is your English marks in 10th?"));
-let Science = Number(prompt("What is your Science marks in 10th?"));
-let Math = Number(prompt("What is your Math marks in 10th?"));
-let Hindi = Number(prompt("What is your Hindi marks in 10th?"));
-let SST = Number(prompt("What is your SST marks in 10th?"));
-
-let total = English + Science + Math + Hindi + SST ;
-let marks = 500;
-let subtotal = total / marks * 100
-console.log(subtotal);
-```
-
-#### Question 3 In which century were your born? find out by asking birth year. Use Math.floor function to remove decimal portion of the century. let birthYear = Number(prompt('In which century were your born?'));
+#### Question 1 let str = "My name is learn javascript"; Split this string using space and find length.
 
 
 ```
-let ans = Math.floor(birthYear/100)+1
-console.log(ans);
-```
-#### Question 4 Add 20 in your name and check value in console. Add true to your name and check output Add 30+"learnjavascript" and check type of the final value.
+let str = "My name is learn javascript";
 
-
-```
-console.log("learnjavascript" + 20);
-console.log(true + "learnjavascript");
-console.log(30 + "learnjavascript");
-```
-
-#### Question 5 Create Reverse Game. Ask any question with 2 possible answers. If user selects first option then show second option in alert and vice versa. For example: Do you drink coffee or tea? and If user says coffee then show Tea in alert and if user says tea then show coffee.
+let strSplit = str.split(" ");
+let strLength = strSplit.length;
+console.log(strLength);
 
 ```
- let  drinks = prompt("Do you drink coffee or tea?");    
- if (drinks === "coffee") {
-    console.log("tea");
- }
- else if(drinks === "tea") {
-    console.log("coffee");
- }
- else{
-    console.log("wrong choice");
- }
-```
-##### . Question 6 Test below conditions using &&, || and not logical operators.  Take any number check if number is even and also check if number is multiple of 4 or not.If both conditions are true then check if number is less than 100 or number is 84 or not.
+#### Question.2 Write a program to check if a string is palindrome or not?
+ 
 
 ```
-let num = 20;
-if (num % 2 ===0 && num % 4 === 0 && (num < 100 || num === 84) ) {
-    console.log("yes");
+let str ="dad";
+let word = "";
+for (let i = str.length - 1; i >= 0 ; i--) {
+    word = word + str[i];
+}
+if (str === word ) {
+    console.log('word is palindrome');
 }
 else{
-    console.log("no");
+    console.log('word is not  palindrome ');
+
 }
 ```
-#### Question 7  Take city temprature.If temp is less than 10 degree then print very cold.If city temp is less than 30 and greater than equal to 10 then print cold.If temp is between 30 to 40 then print Hot. Else print Very hot
+
+#### Question.3 9581894461 Convert to below
+```
+95818*****
+*****94461
+958**944**
 
 ```
-let temp = 44;
-if (temp < 10) {
-    console.log('very cold');
+
+```
+let num = "9581894461";
+let padEn = num.slice(0 ,5).padEnd(10,"*");
+let padEn2 = num.slice(5).padStart(10,"*");
+let padEn3 = num.slice(0 ,3) + "**"+ num.slice(5 , 8)+"**";
+console.log(padEn);
+console.log(padEn2);
+console.log(padEn3);
+```
+#### Question.4 Write a program to reverse a string. For example:
+
+```
+let str = "hello";
+let result ="";
+for (let i = str.length -1; i >=0 ; i--) {
+    result = result += str[i];
 }
-else if (temp <  30 && temp >=10){
-console.log('cold');
+console.log(result);
+```
+
+#### Question.5 Captialize first character of the String. For example:
+
+```
+let str = 'learnjavascript';
+let result = str.charAt(0).toUpperCase() + str.slice(1);
+console.log(result);
+
+```
+##### .Question.6 In a string convert uppercase character to lowercase and vice versa.
+
+```
+HeLlo -> hElLO
+leArNjavaScript -> LEaRnJAVAsCRIPT
+```
+
+```
+let str = "leArNjavaScript"; 
+let result ="";
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toUpperCase()) {
+        result = result + str[i].toLowerCase();
+    }
+    else{
+        result = result + str[i].toUpperCase();
+    }
 }
-else if(temp <= 40 && temp >=  30 ){
-  console.log("Hot");
+console.log(result);
+
+```
+#### Question.7 Camelize the string. for example:
+
+```
+Hello World -> HelloWorld
+my name is Bilal -> MyNameIsBilal
+learn javascript -> LearnJavascript
+```
+
+```
+let str  = "my name is Bilal";
+let word = str.split(" ");
+let result = [];
+for (let i = 0; i < word.length; i++) {
+  let resultshow = word[i].charAt(0).toUpperCase() + word[i].slice(1);
+    result.push(resultshow);
 }
-else{
-    console.log("very hot");
+console.log(result.join(''));
+```
+#### Question.8 Count number of spaces in a string.
+
+```
+let str ="Hello world! How are you?";
+let count = 0;
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+        count++;
+    }
+}
+console.log(count);
+
+```
+### Question.9 Print below pattern using repeat function
+```
+1111111111
+222222222
+33333333
+4444444
+555555
+66666
+7777
+888
+99
+0
+```
+
+```
+for (let i = 1; i <= 10; i++) {
+  let row = "";
+  for (let j = 1; j <= 10 - i; j++) {
+    row += i.toString().repeat(2);
+  }
+  console.log(row);
 }
 ```
-#### Question 8 Using prompt ask user about his/her age. If user is greater than 18 then show user message "Do you want to open account?" If yes click on Okay button then ask your 4 below questions What is your name ? What is your aaadhar number ? What is your address? What is your mobile number? And print all these details in console. If click on cancel then show message "Sorry, please visit again."
+### Question.10 "My name is Bilal Khan", take input from user and print whatever is there after the word. For example:
+
 ```
-let age = Number(prompt("what is your age"));
-if (age > 18 ) {
-  let ok = confirm("Do you want to open account?");
-  if (ok) {
-     let name = prompt("What is your name ?");
-     let aaadharNumber = Number(prompt("What is your aaadhar Number ?"));
-     let address = prompt("What is your address?");
-     let mobileNumber = Number(prompt("What is your mobile number?"));
-     console.log(name ,aaadharNumber,address,mobileNumber)
+Hello learn javascript
+input: "rn"
+output: javascipt
+```
+```
+let input = prompt("Enter a sentence:");
+let word = prompt("Enter a word to search for:");
+
+let index = input.indexOf(word);
+let output = "";
+
+if (index >= 0) {
+  output = input.substring(index + word.length);
+}
+console.log(output);
+
+const inputName = prompt("Please enter your name:");
+const words = inputName.split(" ");
+const lastName = words.slice(1).join(" ");
+
+console.log("Last name:", lastName);
+
+```
+
+### Question.11 substring vs slice vs substr
+
+
+#### 1. substring(start, end): This method extracts a substring from the string, starting at the start index and ending at the end index (exclusive). If end is omitted, the substring extends to the end of the string. If start is greater than end, substring() will swap the two arguments. Negative values for start or end are treated as 0
+```
+let str = "hello world";
+console.log(str.substring(0, 5));  // "hello"
+console.log(str.substring(6));     // "world"
+```
+
+#### 2. slice(start, end): This method is similar to substring(), but it allows negative values for start and end, which are treated as offsets from the end of the string. If end is omitted, the substring extends to the end of the string.
+```
+let str = "hello world";
+  console.log(str.slice(0, 5));      // "hello"
+  console.log(str.slice(6));         // "world"
+  console.log(str.slice(-5));        // "world"
+  console.log(str.slice(0, -6));     // "hello"
+  ```
+
+#### 3. substr(start, length): This method extracts a substring from the string, starting at the start index and extending for length characters. If length is omitted, the substring extends to the end of the string. Negative values for start are treated as offsets from the end of the string
+```
+let str = "hello world";
+console.log(str.substr(0, 5));     // "hello"
+console.log(str.substr(6));        // "world"
+console.log(str.substr(-5));       // "world"
+console.log(str.substr(0, -6));    // ""
+
+```
+### Question.12 What is Regex ? Examples?
+
+```
+What is Regex ? Examples? Regex (short for Regular Expression) is a sequence of characters that defines a search pattern. It is used to match and manipulate text based on certain patterns. In JavaScript, regex patterns are represented by the RegExp object, which can be used with various string methods such as match(), replace(), test(), and split().
+
+```
+
+### Question.13 match vs search function difference
+
+#### The match() function is used to find all the matches of a regular expression within a string. It returns an array of all the matches found, or null if no matches were found. The match() function takes a regular expression as its argument, and the optional g flag can be used to search for all matches within the string.
+
+```
+Here's an example of using the match() function:
+
+let str = "The quick brown fox jumps over the lazy dog";
+let matches = str.match(/o/g);
+console.log(matches);  // ["o", "o", "o", "o"]
+```
+
+#### The search() function, on the other hand, is used to find the index of the first occurrence of a regular expression within a string. It returns the index of the first match found, or -1 if no matches were found. The search() function also takes a regular expression as its argument.
+
+``` 
+Here's an example of using the search() function:
+
+let str = "The quick brown fox jumps over the lazy dog";
+let index = str.search(/fox/i);
+console.log(index);  // 16
+```
+
+
+### Question.14 Take a sentence from prompt. In next question ask for a string and check if that string is present in that sentence or not.
+
+```
+const sentence = prompt("Enter a sentence:");
+
+const searchString = prompt("Enter a string to search for:");
+
+if (sentence.includes(searchString)) {
+  console.log(`'${searchString}' was found in the sentence: ${sentence}`);
+} else {
+  console.log(`'${searchString}' was not found in the sentence: ${sentence}`);
+}
+```
+
+### Question.15 Take a string and if in that string anything is there other than the characters $, _, number, a-z, A_Z then remove them from the string. Don't use regex. for example:
+
+```
+We%^%$Cod!@#e -> We$Code
+
+```
+```
+let str = prompt("Enter a string:");
+let newStr = "";
+
+for (let i = 0; i < str.length; i++) {
+  let char = str.charAt(i);
+  if ((char >= 'a' && char <= 'z') ||
+      (char >= 'A' && char <= 'Z') ||
+      (char >= '0' && char <= '9') ||
+      char === '$' || char === '_' ) {
+    newStr += char;
   }
 }
-else{
-    confirm("Sorry, please visit again.");
-}
+console.log(newStr);
+```
 
-```
-### Question 9 Create a simple calcultor. Firslty ask your about the operation. Like "What do you want to do?" User can type choice in any way like +,- or plus, minus or add, sub etc. After that ask user about first number and then second number and finally show the desired output.
-```
-let ans = prompt("What do you want to peform?");
-let num1 = Number(prompt("Enter number 1"));
-let num2 = Number(prompt("Enter number 2"));
-if (ans === "+") {
-    console.log(num1 + num2);
-}
-else if( ans === "-"){
-      console.log(num1 - num2);
-}
-else if ( ans === "*"){
-console.log(num1 * num2);
-}
-else {
-    console.log("please try again");
-}
-```
-### Question 10 Who is most intelligent in your family? Ask 10th percentage of each family member and check who got the highest marks. If total family members are more than 4 then you can use Math.max() function
-```
-let member1 = Number(prompt("what is bilal 10th percentage ?"));
-let members2 = Number(prompt("what is altaf 10th percentage ?"));
-let members3 = Number(prompt("what is A L 10th percentage ?"));
-let members4 = Number(prompt("what is sher mohammad 10th percentage ?"));
 
-let sumMark = Math.max(member1 , members2 , members3 , members4);
-console.log(sumMark);
-```
+
+
+
