@@ -1,4 +1,4 @@
-## Exercise
+## Exercise-14
 
 ## 1. Create an array called fruits that contains the following elements: "apple", "banana", "orange". Now check if "orange" is in the fruits array.
 
